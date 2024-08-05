@@ -4591,8 +4591,8 @@ Wld:AddToggle({
             end
             until not _G.TeleportIsland
         end
-for i, v in getconnections(game.Players.LocalPlayer.PlayerGui.Main.Gateway.Container.List.ScrollingFrame.Lava.MouseButton1Click) do
-    v.Function()
+        StopTween(_G.TeleportIsland)
+    end
 end
 })
 
